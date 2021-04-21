@@ -30,3 +30,4 @@ spec:
      containers:
      - name: nodejs
        image: testnode
+       imagePullPolicy: Never
