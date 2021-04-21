@@ -12,9 +12,9 @@ spec:
  template:
    metadata:
      labels:
-       app: ubunto
+       app: ubuntu
    spec:
      containers:
-     - name: ubunto
+     - name: ubuntu
        image: ubuntu:18.04
        imagePullPolicy: Never
