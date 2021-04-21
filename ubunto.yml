@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+ name: ubunto
+ labels:
+   app: ubunto
+spec:
+ replicas: 1
+ selector:
+   matchLabels:
+     app: ubuntu
+ template:
+   metadata:
+     labels:
+       app: ubunto
+   spec:
+     containers:
+     - name: ubunto
+       image: ubuntu:18.04
+       imagePullPolicy: Never
